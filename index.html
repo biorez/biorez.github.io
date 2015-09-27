@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+	<title>Evaluare Computerizată - Depistarea dezechilibrelor energetice</title>
+
+	<meta name="description" content="Evaluarea computerizată e o metodă modernă de depistare a dezechilibrelor energetice la nivelul celulei, fapt pentru care se pot depista bolile în faze de debut.">
+
+	<!--[if IE]
+	<section class="outdated">
+		<p><strong>Folosiți un navigator de internet învechit!</strong></p>
+		<p>Pentru a putea vizualiza corect acest website dar și pentru a vă îmbunătăți experiența de navigare pe internet</p>
+		<p>Vă rugăm să descărcați un navigator modern apăsând butonul de mai jos.</p>
+		<a class="download" href="http://outdatedbrowser.com/">Descarcă de aici !</a>
+	</section>
+	<![endif]-->
+
+	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,latin-ext' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" media="screen"/>
+
+	<script type="text/javascript">
+
+		function initMap() {
+
+			var isDraggable = $(document).width() > 480 ? true : false;
+
+			var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				draggable: isDraggable,
+				center:new google.maps.LatLng(45.7754389, 21.2448223),
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+				map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+				marker = new google.maps.Marker({
+					map: map,
+					position: new google.maps.LatLng(45.7754389, 21.2448223)
+				});
+
+				infowindow = new google.maps.InfoWindow({
+					content:"<span id='infoWindow'><span id='ec'>Evaluare Computerizată</span><br/>Strada Verde<br/>Zona Lipovei, Timișoara</span>"
+				});
+
+				google.maps.event.addListener(marker, "click", function() {
+					infowindow.open(map,marker);
+				});
+
+				infowindow.open(map,marker);
+		}
+
+		function loadScript() {
+			var script 	= document.createElement("script");
+			script.type = "text/javascript";
+			script.src 	= "http://maps.googleapis.com/maps/api/js?v=3&sensor=false&callback=initMap";
+			document.body.appendChild(script);
+		}
+
+		window.onload = loadScript;
+
+	</script>
+
+</head>
+
+<body>
+
+<!-- =============== Preloader =============== -->
+
+<div id="preloader" class="valign-wrapper">
+
+    <div class="center" style="width: 100%">
+
+		<div class="preloader-wrapper active">
+
+			<div class="spinner-layer spinner-blue-only">
+
+				<div class="circle-clipper left">
+
+					<div class="circle"></div>
+
+					</div><div class="gap-patch">
+
+					<div class="circle"></div>
+
+					</div><div class="circle-clipper right">
+
+					<div class="circle"></div>
+
+				</div>
+
+	</div></div>
+
+</div></div>
+
+<!-- =============== Navbar =============== -->
+
+<nav class="navbar">
+
+	<div class="nav-wrapper container">
+
+		<a id="logo-container" href="#" class="brand-logo">
+
+			<img src="img/logo.png" alt="Evaluare computerizata">
+
+		</a>
+
+		<ul class="right hide-on-med-and-down">
+
+			<li><a href="#about">Despre</a></li>
+
+			<li><a href="#advantages">Avantaje</a></li>
+
+			<li><a href="#info">Procesul</a></li>
+
+			<li><a href="#faq">Preț și Întrebări</a></li>
+
+			<li><a href="#gallery-bg">Galerie</a></li>
+
+			<li><a href="#testimonials">Mărturii</a></li>
+
+			<!-- <li><a href="#team">Echipa</a></li> -->
+
+			<li><a href="#simple">Suplimente</a></li>
+
+			<li><a href="#contact">Contact</a></li>
+
+		</ul>
+
+	</div>
+
+</nav>
+
+<!-- =============== Header =============== -->
+
+<section id="header-banner">
+
+	<div class="hero-image parallax-container">
+
+		<div class="parallax">
+
+			<img alt="" src="img/blue_bg.jpg">
+
+		</div>
+
+		<h1 class="white-text container center light">
+
+			<q>Cine nu are azi timp pentru sănătate, va avea mâine pentru boală</q>
+
+		</h1>
+
+	</div>
+
+	<div class="center-align scrolldown">
+
+		<a class="btn-flat btn-large btn-floating cyan" data-section="#about" href="#about">
+
+			<i class="material-icons">expand_more</i>
+
+		</a>
+
+	</div>
+
+</section>
+
+<!-- =============== About Section =============== -->
+
+<section class="about">
+
+	<div class="container">
+
+		<div class="row">
+
+			<h4>Ce este Evaluarea Computerizată?</h4>
+
+			<div id="about" class="col s12 l6 scrollspy">
+
+				<h5>Despre Evaluarea Computerizată</h5>
+
+				<p>Evaluarea computerizată este o metodă modernă de depistare a dezechilibrelor energetice la nivel de celulă, dezvoltată pe baza cercetărilor efectuate de Institutele de Psihofizică din Rusia. Aparatul de evaluare constă într-un sistem computerizat care poate detecta deficiențele sau modificările patologice la nivelul structurilor de unde energetice generate la nivelul țesuturilor, organelor sau celulelor organismului.</p>
+
+				<blockquote>
+
+					<p>Evaluarea computerizată face parte din medicina alternativă - cuantică, energetică și se bazează pe faptul că fiecare organ , fiecare celulă emite un câmp electromagnetic care poate fi perceput de aparate speciale. Informația primită de la pacient e transmisă computerului și prelucrată.</p>
+
+					<p>Aparatul poate depista dezechilibrele energetice, care generează boli. De aceea se pot depista bolile chiar și în faze de debut, înainte să apară simptomele. Se pot verifica într-o singură sedință toate organele și sistemele din organism.</p>
+
+					<p>Evaluarea computerizată detectează cauzele bolii, nu doar afecțiunea în sine. Dupa ce aparatul finalizează scanarea, specialistul va interpreta rezultatele urmând a stabili dezechilibrele la nivel de celulă și linia de tratament.</p>
+
+				</blockquote>
+
+			</div>
+
+			<div class="col s12 l6">
+
+				<div class="shadow hoverable video-container">
+
+					<iframe width="700" height="315"
+
+					src="https://www.youtube.com/embed/2qmcuwolrro?autohide=1"
+
+					allowfullscreen></iframe>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== Advantages Section =============== -->
+
+<section>
+
+	<h4>Avantajele Evaluării Computerizate și ale Produselor Naturiste</h4>
+
+	<div id="advantages" class="container scrollspy">
+
+		<div class="row">
+
+			<div class="col s12">
+
+				<h3 class="center big-header">
+
+					Medicina alopată (cu medicamente de sinteză) are o formă de acționare mai rapidă, cu acțiune punctuală, dar și mai <span class="stand-out">brutală</span> pentru organism. E de preferat să fie folosită doar în cazuri de <span class="stand-out">urgență.</span>
+
+				</h3>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<div class="icon-block">
+
+					<h2 class="center cyan-text"><i class="material-icons">healing</i></h2>
+
+					<h5 class="center">Nu s-a inventat încă o pastilă minune care să rezolve toate problemele de sănătate.</h5>
+
+					<p class="light">Produsele naturiste administrate ca tratament sprijină capacitatea de vindecare naturală a pacientului. Principiile active naturale amplifică și stimulează mecanismul natural de eliminare a bolii. Există cazuri care nu raspund la tratamentul alopat, dar care dau rezultate bune la tratamente naturiste. Cu ajutorul informațiilor primite în urma testului de evaluare computerizată se pot lua măsuri de prevenire a îmbolnăvirii fară să se apeleze la medicamente, prin recomandarea de produse naturiste biocompatibile cu organismul.</p>
+
+				</div>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<div class="icon-block">
+
+					<h2 class="center cyan-text"><i class="material-icons">mood</i></h2>
+
+					<h5 class="center">Se adresează tuturor oamenilor.</h5>
+
+					<p class="light">Testul de evaluare al stării de sănătate prin evaluare computerizată se adresează tuturor oamenilor de la vârste fragede (minim 11 ani) până la bătrânețe, atăt celor sănătoși cât și celor deja bolnavi. Fiecare pacient este tratat ca individ cu particularități unice. Trebuie descoperită cauza problemelor sale de sănătate. La o stare bună de sănătate contribuie în mare parte și echilibrul interior al fiecăruia. Soluția ideală ar fi prevenția. Menținerea sănătații prin consumul de produse 100% naturale.</p>
+
+				</div>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<div class="icon-block">
+
+					<h2 class="center cyan-text"><i class="material-icons">schedule</i></h2>
+
+					<h5 class="center">Se poate face in orice moment al zilei și dureaza  20  de minute.</h5>
+
+					<p class="light">O consultație medie durează cca. 20 de minute și pacientul pleacă cu o situație generală despre starea sănătații sale, in care sunt evidențiați factorii de risc la care e predispus organismul său. Metoda de investigare e rapidă, nedureroasă si fară riscuri. Deasemenea există situații în care este nevoie de tratament de specialitate și ca atare îl dirijăm pe pacient către un medic specialist corespunzător. În acest fel ajutorul nostru este major, pentru că sunt destule persoane care nu realizează gravitatea bolii pe care o au și uneori ajung prea târziu la medic.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== info section =============== -->
+
+<section id="infosec">
+
+	<div class="container">
+
+		<div class="row">
+
+		<h4>Procesul de Scanare și Diagnosticare</h4>
+
+			<div id="info" class="col s12 l4 scrollspy">
+
+				<div class="hoverable card">
+
+					<div class="card-image">
+
+						<img src="img/2.jpg" alt="Scanarea și Diagnosticarea pacientului prin evaluare computerizată">
+
+						<span class="card-title cyan">Scanarea și Diagnosticarea</span>
+
+					</div>
+
+					<div class="card-content">
+
+						<p>Aparatul este de ultimă generație și are capacitatea de a scana și diagnostica emisia energetică a întregului organism uman, de la aparatele corpului uman și sisteme până la nivel celular și cromozomial. Precizia de diagnostic pentru organe este cuprinsă între 90-95%, iar la nivel celular, cromozomial, 80 până la 85%.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<div class="hoverable card">
+
+					<div class="card-image">
+
+						<img src="img/1.jpg" alt="Analizator cuantic cu rezonanață magnetică evaluare computerizata">
+
+						<span class="card-title cyan">Analizator cuantic</span>
+
+					</div>
+
+					<div class="card-content">
+
+						<p>Are ca principiu de funcționare analiza cuantică a rezonanței magnetice (ACRM) și implică inovații de tehnologie avansată din medicina, bio-informatică, inginerie și din alte domenii. Folosind medicina cuantică ca bază teoretică, acest echipament electronic colectează câmpul magnetic slab al celulelor corpului uman, îl analizează și determină starea de sănătate a persoanei testate, principalele sale probleme, scoțând în evidență recomandări standard de prevenire a bolilor.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<div class="hoverable card">
+
+					<div class="card-image">
+
+						<img src="img/3.jpg" alt="Metoda de testare prin evaluare computerizată">
+
+						<span class="card-title cyan">Metoda de Testare</span>
+
+					</div>
+
+					<div class="card-content">
+
+						<p>Este mult mai simplu să se efectueze o evaluare prin care sunt evidențiate disfuncțiile din organism la nivel celular, fară să se ia sânge pentru analize, fară a fi iradiat cum se întâmplă la radiografii și fară a fi spitalizat. Acest test durează aproximativ 20 de minute. Totuși testul de evaluare computerizată este contraindicat persoanelor care au stimulator cardiac.</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== Price panel & FAQ section =============== -->
+
+<section>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col s12 l6">
+
+				<h4>Prețul unui set de Analize</h4>
+
+				<div id="faq" class="hoverable card scrollspy">
+
+					<div class="card-price center cyan darken-1">
+
+						<h5>Setul de Analize per Persoană la:</h5>
+
+						<h2>90 RON</h2>
+
+					</div>
+
+					<div class="card-content">
+
+						<h5 class="center">Setul cuprinde:</h5>
+
+						<div class="row set">
+
+							<ul>
+								<li>Inima (colesterol,trigliceride, vâscozitatea sângelui, tensiune arterială,
+								circulația sângelui periferică și la nivelul inimii, artera coronară și ventriculul stâng)</li>
+								<li>Sângele (circulația venoasă, arterială)</li>
+								<li>Plămânii (capacitatea vitală și pulmonară totală, oxigenare plămâni
+								și rezistența căilor respiratorii, sistemul respirator)</li>
+								<li>Ficatul (metabolismul proteic, detoxifiere, secreția bilei și steatoza hepatică)</li>
+								<li>Stomacul (enzime digestive, gastrită, hiperaciditate)</li>
+								<li>Deficitul de vitamine.</li>
+							</ul>
+
+							<ul>
+								<li>Sistemul nervos (circulația cerebrală, nervii cranieni,
+								arterioscleroză cerebrală, indexul sentimental, indexul memoriei)</li>
+								<li>Articulațiile și Densitatea osoasa.</li>
+								<li>Funcția Reumatoidă.</li>
+								<li>Sistemul endocrin și glanda tiroidă.</li>
+								<li>Intestinul subțire (flora intestinală).</li>
+								<li>Deficitul de minerale și oligoelemente.</li>
+								<li>Vezica biliară.</li>
+								<li>Aparatul urinar (acid uric, uree, proteinurie, urobilinogen)</li>
+								<li>Aparatul genital (ginecologie, prostată).</li>
+							</ul>
+
+						</div>
+
+					</div>
+
+					<div class="card-action cyan darken-1"></div>
+
+				</div>
+
+			</div>
+
+			<div class="col s12 l6 hide-on-small-only">
+
+				<h4>Intrebări Frecvente</h4>
+
+				<ul class="hoverable collapsible card" data-collapsible="accordion">
+
+					<li>
+						<div class="active collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Ce acuratețe are acest dispozitiv de evaluare computerizată?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Acest dispozitiv poate detecta cu mare probabilitate (precizie de peste 90%) în faze incipiente, modificările survenite în starea de sănătate. Pentru comparație, RMN-ul depistează afecțiuni de gastroenterologie cu o precizie de 30-34%. În cazul evaluării computerizate, examinarea are loc în zona energo-informatională, prin intermediul unui dispozitiv electro-magnetic.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Care este principiul de funcționare al evaluării computerizate?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Aparatul poate depista dezechilibrele energetice, care generează boli. De aceea se pot depista bolile chiar și în faze de debut, înainte să apară simptomele. Se pot verifica într-o singură sedință toate organele și sistemele din organism.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Prin ce diferă evaluarea față de celelate metode de diagnostic?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Informațiile furnizate de aparatul de evaluare computerizată sunt fundamental diferite față de cele oferite de radiografii, analize de sânge etc., din moment ce ne vorbesc despre starea energetică a întregului organism, luat ca un tot, și despre direcția în care organismul își concentrează energia. Analiza fiind globală în întregul organism și nu doar în cațiva ml de sânge, are o acuratețe mult mai mare, erorile survenind mult mai rar. Odată măsurate nivelurile de vitamine, aminoacizi, nutrienți, minerale, enzime, zaharuri, hormoni, sănătatea și echilibrul organelor interne, aparatul compară toate aceste valori cu normele etalon din baza de date.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Care ar fi avantajele acestei metode comparativ cu medicina alopată?
+						</div>
+
+						<div class="collapsible-body">
+							<p>De departe, cel mai important avantaj constă în faptul că aparatul depistează din timp anumite boli, cum ar fi gastrita, osteoporoza, etc., înainte ca acestea să se manifeste în corpul fizic, având în vedere ca mai întâi dezechilibrul apare în sfera bioenergetică a organismului, și de-abia apoi în corpul fizic. Acest lucru este extraordinar, deoarece permite depistarea din timp a acestor boli cand ele încă nu pot fi detectate prin alte metode de diagnostic.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">help_outline</i>
+							Cât de subiectivă este metoda?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Analiza este foarte obiectivă, ea fiind realizată de un dispozitiv electromagnetic computerizat. Specialistul citește și pune cap la cap datele oferite de către computer.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Care este atitudinea oficialitaților medicale vis-a-vis de această metodă?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Practicarea acestei metode este reglementată prin Legea 118/2007 privind organizarea și funcționarea activităților și practicilor de medicină complementară/alternativă și se încadrează în categoria 6 numită <q>Aplicații bio-electromagnetice și energetice</q>. Universitățile de Medicină din toată lumea, inclusiv din România au început să organizeze împreună cu Colegiul Medicilor cursuri post-universitare de pregătire pentru <q>Evaluarea globală energetică și functională computerizată a organismului (diagnostic și terapie prin biorezonantă)</q>.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							Este consultația dureroasă sau produce disconfort ori efecte secundare?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Nu. Pacientul stă pe scaun și nu simte nimic, iar efecte secundare sau adverse nu există.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header truncate">
+							<i class="material-icons">help_outline</i>
+							În ce constă tratamentul în cazul acestei metode?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Produsele naturiste administrate ca tratament sprijină capacitatea de vindecare naturală a pacientului. Principiile active naturale amplifică și stimulează mecanismul natural de eliminare a bolii. Avantajele produselor naturiste sunt acelea că nu au reacții adverse, nu creează dependentă și au efect benefic multidistributiv pe mai multe organe odată. Oferta de produse naturiste aparută pe piață în ultimul timp e foarte mare. Dacă doriți să fiți siguri că alegeți produse de calitate cu eficiență maximă pentru afecțiunile dumneavoastră nu ezitați să ne contactați pentru o astfel de scanare.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="collapsible-header">
+							<i class="material-icons">help_outline</i>
+							Cat durează procesul de evaluare?
+						</div>
+
+						<div class="collapsible-body">
+							<p>Evaluarea durează aproximativ 20 de minute și rezultatele buletinelor de analize se primesc pe loc , în durata consultației.</p>
+						</div>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== Gallery =============== -->
+
+<section id="gallery-bg" class="scrollspy">
+
+	<div class="container gallery">
+
+		<h4>Galerie</h4>			<!-- if > 8 photos incorporate Tabs component! -->
+
+		<div id="gallery" class="row">
+
+			<div class="col s6 m4">
+
+				<img class="materialboxed responsive-img" src="img/pic1.jpg" alt="">
+
+			</div>
+
+			<!-- <div class="col s6 m3">
+
+				<img class="materialboxed responsive-img" src="img/cali.jpg" alt="">
+
+			</div> -->
+
+			<div class="col s6 m4">
+
+				<img class="materialboxed responsive-img" src="img/pic4.jpg" alt="">
+
+			</div>
+
+			<div class="col s6 m4">
+
+				<img class="materialboxed responsive-img" src="img/pic2.jpg" alt="">
+
+			</div>
+
+		</div>
+
+		<!-- <div class="row">
+
+			<div class="col s6 m3">
+
+				<img class="materialboxed responsive-img" src="img/3.jpg" alt="">
+
+			</div>
+
+			<div class="col s6 m3">
+
+				<img class="materialboxed responsive-img" src="img/2.jpg" alt="">
+
+			</div>
+
+			<div class="col s6 m3">
+
+				<img class="materialboxed responsive-img" src="img/3.jpg" alt="">
+
+			</div>
+
+			<div class="col s6 m3">
+
+				<img class="materialboxed responsive-img" src="img/2.jpg" alt="">
+
+			</div>
+
+		</div> -->
+
+	</div>
+
+</section>
+
+<!-- =============== Testimonials =============== -->
+
+<section id="testimonials" class="scrollspy">
+
+	<h4>Mărturii ale pacienților</h4>
+
+	<div class="row">
+
+		<div class="col s12 m6 l4">
+
+			<div class="hoverable card-panel cyan darken-1">
+
+				<img src="img/doe1.jpg" alt="Păreri evaluare computerizată">
+
+				<p>Am fost la testul de evaluare să zicem mai mult din pură curiozitate dar şi înarmată cu o tonă de scepticism. Culmea...s-a depistat ceea ce suspectam că am de ceva timp (fară să fiu întrebată despre starea mea de sănătate) şi mi s-a mai spus faptul că nu aş fi predispusă la alte boli pe viitor. Reamintesc, nu mi s-au pus niciun fel de întrebări din care puteau deduce ceea ce am, şi nici nu mi-au pus întrebări despre ce boli am mai avut. Parerea mea este că merită încercată şi această variantă.</p>
+				<p>- Lavinia Latiş</p>
+
+			</div>
+
+		</div>
+
+		<div class="col s12 m6 l4">
+
+			<div class="hoverable card-panel cyan darken-1">
+
+				<img src="img/doe2.jpg" alt="Opinii evaluare computerizată">
+
+				<p>Scriu acest mesaj pentru cei sceptici în privinţa acestui aparat. Pur şi simplu mergeţi şi testaţi-vă! Veţi fi uimiţi câte veţi afla despre corpul dumneavoastră! Eu am făcut testarea şi de 4 luni simt o îmbunătăţire semnificativă. Nimeni nu depista ce aveam, analize peste analize, medicamente prescrise aiurea, bani aruncaţi pe fereastră. Vă spun sincer că această testare mi-a îmbunătăţit viaţa prin faptul că acum urmez un tratament cu produse naturiste pentru o vindecare cât mai naturală.</p>
+				<p>- Bogdan Avrămoni</p>
+
+			</div>
+
+		</div>
+
+		<div class="col s12 l4">
+
+			<div class="hoverable card-panel cyan darken-1">
+
+				<img src="img/doe3.jpg" alt="Pareri evaluare computerizata">
+
+				<p>Am fost şi eu la o consultaţie, am fost foarte sceptică şi mai mult am vrut să văd dacă îmi depistează bolile de care ştiam că sufăr. Am indentificat două boli cronice ca adevărate. Mi s-a descoperit hipertensiunea arterială, şi s-a mai insistat şi asupra faptului că am probleme la ochi. Eu am glaucom, aşa că şi acest lucru mi s-a confirmat. A fost o experienţă interesantă, este un mijloc rapid de a vedea unde sunt probleme ca mai apoi să faci investigaţii suplimentare acolo unde este necesar.</p>
+				<p>- Doamna Carmen</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== Team Section =============== -->
+
+<!-- <section id="team" class="scrollspy">
+
+	<div class="container row">
+
+		<h4>Echipa Noastră</h4>
+
+		<div class="center team">
+
+			<div class="col s12 m6 l4">
+
+				<img class="responsive-img z-depth-1" src="img/doc1.jpg" alt="Specialist evaluare computerizata">
+
+				<h5>Specialist Marilă Daniel</h5>
+
+				<h6>Practicant de 25 ani</h6>
+
+				<p></p>
+
+			</div>
+
+			<div class="col s12 m6 l4">
+
+				<img class="responsive-img z-depth-1" src="img/doc2.jpg" alt="Specialist evaluare computerizata">
+
+				<h5>Doctor Frank</h5>
+
+				<h6>Practicant de 25 ani</h6>
+
+				<p></p>
+
+			</div>
+
+			<div class="col s12 l4">
+
+				<img class="responsive-img z-depth-1" src="img/doc3.jpg" alt="Specialist evaluare computerizata">
+
+				<h5>Asistent Laura</h5>
+
+				<h6>Practicant de 15 ani</h6>
+
+				<p></p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section> -->
+
+<!-- Test section -->
+
+<section id="simple" class="scrollspy">
+
+	<div class="container row">
+
+		<h4>Suplimente alimentare</h4>
+
+		<div class="pad-n-center">
+
+			<div class="col s12 l6 center simple">
+
+				<img class="responsive-img z-depth-1" src="img/cali.jpg" alt="Suplimente alimentare naturale CaliVita">
+
+			</div>
+
+			<div class="col s12 l6 body-info">
+
+				<h4 class="left-align title">CaliVita International</h4>
+
+				<p>De mai mult de doua decenii, CaliVita International este una dintre cele mai renumite companii de suplimente alimentare de pe piaţa europeană. Motivul apariţiei acestor produse naturale este faptul că majoritatea bolilor sunt boli de nutritie. Hranirea cu alimente proaspete şi diversificate dar şi medicina naturală, au contribuit de mii de ani la prevenirea şi tratarea unor astfel de maladii.</p>
+
+				<p>Produsele sunt naturale, alcătuite din materii prime de origine naturală, cu puritate de 100%, nu conţin zahăr, sare, conservanţi, coloranţi sintetici, nu creează dependenţă şi nu au efecte secundare negative, acţionează benefic către mai multe organe (previn, tratează şi ameliorează o gamă largă de afecţiuni).</p>
+
+				<p>Pentru a putea comanda produsele CaliVita accesaţi butonul de mai jos:</p>
+
+				<a class="btn btn-flat cyan darken-1 access-link" href="http://livebetter.mycali.biz/webshop">
+
+					Comandă de Aici!<i class="material-icons right">shopping_basket</i>
+
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- =============== Contact Section =============== -->
+
+<section id="contact" class="half scrollspy">
+
+<!-- Google embedded Map -->
+
+	<div id="map-wrapper">
+
+		<div id="googleMap"></div>
+
+	</div>
+
+<!-- Contact form start -->
+
+	<div id="contact-form" class="row">
+
+		<form class="col s12" action="//formspree.io/dany_marila@yahoo.com" method="POST">
+
+		<!-- Form header -->
+
+			<h4>Formular Contact</h4>
+
+			<div class="row">
+
+			<!-- Name field -->
+
+				<div class="input-field col s6">
+
+					<i class="material-icons prefix">account_circle</i>
+
+					<input id="name" type="text" class="validate" name="name">
+
+					<label for="name">Nume</label>
+
+				</div>
+
+			<!-- Subject field -->
+
+				<div class="input-field col s6">
+
+					<i class="material-icons prefix">sort</i>
+
+					<input id="subject" type="text" class="validate" name="_subject">
+
+					<label for="subject">Subiect</label>
+
+				</div>
+
+			<!-- Email field -->
+
+				<div class="input-field col s12">
+
+					<i class="material-icons prefix">email</i>
+
+					<input id="email" type="email" class="validate" name="_replyto"
+
+					title="Introduceți o adresă validă de email">
+
+					<label for="email">Email</label>
+
+				</div>
+
+			<!-- Message field -->
+
+				<div class="input-field col s12">
+
+					<i class="material-icons prefix">create</i>
+
+					<textarea id="message" class="materialize-textarea" length="620"></textarea>
+
+					<label for="message">Mesaj</label>
+
+				</div>
+
+			</div>
+
+			<!-- Submit button -->
+
+			<button class="btn btn-flat cyan darken-1" type="submit" name="action">
+
+				Trimite Mesaj<i class="material-icons right">send</i>
+
+			</button>
+
+		</form>
+
+	</div>
+
+<!-- Contact form end -->
+
+</section>
+
+<!-- =============== Phone contact section =============== -->
+
+<div class="contakt section valign-wrapper">
+
+	<div class="section">
+
+		<div class="container center">
+
+			<h3 class="light">Pentru programări ne puteți contacta telefonic la numărul:</h3>
+
+		</div>
+
+	</div>
+
+	<div class="phone-call">
+
+		<i class="large material-icons">phone</i>
+
+		<h2>0742 761 571</h2>
+
+	</div>
+
+</div>
+
+<!-- =============== Footer =============== -->
+
+<footer class="page-footer">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col s12 l6 hide-on-small-only">
+
+				<h5>Locația și data consultării</h5>
+
+				<p style="font-size: 1.4em">Pentru a afla locația și data consultării, contactați-ne pe numărul de programări afișat mai sus, aceste date nefiind afișate pentru că se pot schimba lunar.</p>
+
+			</div>
+
+			<div class="col s12 m6 l3">
+
+				<h5>Program</h5>
+
+				<p><strong>Luni-Vineri:</strong> &nbsp;8:00 - 20:00</p>
+				<p><strong>Sâmbătă:</strong> &nbsp;9:00 - 20:00</p>
+				<p><strong>Duminica:</strong> &nbsp;Indisponibil</p>
+
+			</div>
+
+			<div class="col s12 m6 l3">
+
+				<h5>Contact</h5>
+
+				<p><i class="material-icons left">location_on</i>&nbsp;Adresă sediu</p>
+
+				<p>Strada Verde, Zona Lipovei, Timișoara, RO</p>
+
+				<p><i class="material-icons left">email</i>&nbsp; Email</p>
+
+				<p><a class="white-text" href="mailto:dany_marila@yahoo.com">dany_marila@yahoo.com</a></p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="footer-copyright">
+
+		<div class="container">
+
+			<span>2015 &copy; Evaluare Computerizată</span>
+
+			<div class="right">
+
+				<a class="white-text" href="mailto:pigabyte7@gmail.com">
+
+					Web Design by&nbsp;
+
+					<span class="yellow-text text-darken-1">pigabyte7@gmail.com</span>
+
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+<!-- =============== Scroll Up button =============== -->
+
+	<div class="scrollUp">
+
+		<a class="cyan btn-floating" href="#">
+
+			<i class="material-icons">expand_less</i>
+
+		</a>
+
+	</div>
+
+<!-- =============== included scripts =============== -->
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/bin/main.min.js"></script>
+
+</body>
+</html>
