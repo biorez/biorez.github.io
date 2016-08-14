@@ -21,8 +21,11 @@
     }
     
     .card-panel img {
-      margin: 0 auto;
-      border: 8px solid #009C9C;
+      width: unset;
+      height: unset;
+      border: none;
+      margin: 0 300px;
+      border-radius: 0;
     }
     
     .back-btn {
@@ -44,9 +47,10 @@
       <div class="col s12">
         <div class="card-panel white large center-align">
 
-            <img src="check.png">
-
             <h2>Mesaj Trimis!</h2>
+
+            <img src="http://eucalls.net/images/mail_icon.jpg">
+
             <h5>Mesajul tău a fost recepționat și urmează să te contactăm în curând!</h5>
 
             <button class="btn btn-flat back-btn" value="Mergi Inapoi" onClick="history.go(-1);return true;">
